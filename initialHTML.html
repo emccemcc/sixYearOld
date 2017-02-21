@@ -1,0 +1,31 @@
+<!-- starting -->
+  <!-- create moduel -->
+<html ng-app="myModule">
+
+<head>
+<!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+<input type="button" name="words" value="submit"/>
+
+
+
+<p ng-repeat="word in words"> {{word}} </p>
+
+<!-- bonus button that will fire off for given amount of time,
+idea of math -->
+<input type="button" name="masterList.taskName" value="submit"/>
+<input type="button" name="masterList.taskName" value="submit"/>
+<input type="button" name="masterList.taskName" value="submit"/>
+
+
+<!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src = 'initialJS.js'> </script>
+  <link rel="stylesheet" href = 'initialCSS.css'/>
+</body>
+
+</html>
