@@ -9,11 +9,13 @@
 
 <body ng-controller="myController">
 
-<input type="button" name="words" value="submit"/>
+<form ng-submit="submit()">
+<input ng-model="btnItemsShown" type="submit" name="words" value="words"/>
+
+</form>
 
 
-
-<p ng-repeat="word in words" ng-class="{active: $index == selected}"> {{word}} </p>
+<p ng-repeat="value in btnItemsShown"> {{value}} </p>
 
 <!-- bonus button that will fire off for given amount of time,
 idea of math -->
