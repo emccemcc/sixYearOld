@@ -5,20 +5,25 @@ app.controller('myController', function($scope){
 $scope.btnItemsShown = [];
 
 //prepopulated array?
-$scope.words = ['jazz', 'music', 'edm', 'maybeMusic', 'pop', 'rock', 'moreJazz'];
+$scope.words = ['jazz', 'music', 'edm', 'maybeMusic', 'pop', 'rock', 'moreJazz', 'moreJazz1', 'moreJazz2', 'moreJazz3','moreJazz4'];
+var indexWord = 0;
+var indexWordRandom = 0;
 
+$scope.submit = function() {
+      $scope.btnItemsShown.push($scope.words[indexWord]);
+      indexWord++;
+      console.log(indexWord);
+      console.log($scope.words[indexWord]);
+  };
 
-
-
-$scope.submit = function(index) {
-      for (var i = 0; i < words.length; i++){
-        i = index;
-      $scope.btnItemsShown.push($scope.words[index]);
-      console.log(index);
-      console.log($scope.words[index]);
+  $scope.submitWordRandom = function() {
+        indexWordRandom = Math.round(Math.random() * 10);
+        $scope.btnItemsShown.push($scope.words[indexWordRandom]);
+        console.log(indexWordRandom);
+        console.log($scope.words[indexWordRandom]);
     };
 
-  };
+
 
 
 });

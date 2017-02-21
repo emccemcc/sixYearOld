@@ -11,9 +11,11 @@
 
 <form ng-submit="submit()">
 <input ng-model="btnItemsShown" type="submit" name="words" value="words"/>
-
 </form>
 
+<form ng-submit="submitWordRandom()">
+<input ng-model="btnItemsShown" type="submit" name="randomWord" value="randomWord"/>
+</form>
 
 <p ng-repeat="value in btnItemsShown"> {{value}} </p>
 
