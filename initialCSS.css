@@ -1,0 +1,7 @@
+p {
+visibility:hidden;
+}
+
+.active {
+  visibility: visible;
+}
