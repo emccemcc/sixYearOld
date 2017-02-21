@@ -17,7 +17,7 @@
 <input ng-model="btnItemsShown" type="submit" name="randomWord" value="randomWord"/>
 </form>
 
-<p ng-repeat="value in btnItemsShown"> {{value}} </p>
+<p ng-repeat="value in btnItemsShown track by $index"> {{value}} </p>
 
 <!-- bonus button that will fire off for given amount of time,
 idea of math -->
